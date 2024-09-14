@@ -6,10 +6,12 @@
 
 
 
-img{
-    width: 100vw;
-    height: 100vh;
+img,video{
+    width: 100%;
+    height: 100%;
+
     object-fit: cover;
+    border-radius: 20px;
 }
 
 p,a{
@@ -21,7 +23,7 @@ p,a{
 
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
 }
 .counter{
@@ -45,11 +47,11 @@ p,a{
 
 .hero{
     position: absolute;
-    top: 50%;
+    top: 74%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0.7);
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100% );
     will-change: transform;
     z-index: 1;
@@ -59,8 +61,8 @@ p,a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #1a1a1a;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     z-index: 2;
@@ -73,6 +75,7 @@ nav{
     display: flex;
     width: 100%;
     padding: 1em;
+    /*background-color: greenyellow;*/
 }
 
 
@@ -95,7 +98,7 @@ nav{
 .header{
     position: absolute;
     width: 100%;
-    top: -5%;
+    top: -12%;
     left:0;
     clip-path: polygon(0 100%,100% 100%,100% 0,0 0);
     z-index: 1;
@@ -109,7 +112,7 @@ nav{
     text-align: center;
     margin: 0;
     padding: 0;
-    line-height: 100%;
+    /*line-height: 100%;*/
 }
 
 .header h1 span{
@@ -120,19 +123,74 @@ nav{
 
 .hero-img{
     position: absolute;
-    bottom: 0;
+    top: 560px;
     width: 100%;
-    height: 35vh;
-    overflow: hidden;
-    z-index: 0;
+    height: 70vh;
+    /*overflow: hidden;*/
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    z-index: 1;
+    /*background-color: greenyellow;*/
 
 
 }
 
-.hero-img img{
+.hero-img img,.hero-img video{
     transform: scale(2);
+
 }
-@media(max-width:900px){
+@media (max-width: 480px) {
+
+
+}
+@media (min-width:481px)  and (max-width:900px){
+    .nav-col:nth-child(1) .nav-items:nth-child(2) p{
+        text-align: right;
+    }
+    .nav-col.nav-col:nth-child(2){
+        display: none;
+    }
+
+    .hero-img{
+        height: 50vh;
+    }
+    .hero-img{
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        height: 70vh;
+        /*overflow: hidden;*/
+        display: flex;
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        z-index: 0;
+        /*background-color: greenyellow;*/
+
+
+    }
+    .header{
+        position: absolute;
+        width: 100%;
+        top: -0%;
+        left:0;
+        clip-path: polygon(0 100%,100% 100%,100% 0,0 0);
+        z-index: 1;
+    }
+
+    .hero{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0.7);
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100% );
+        will-change: transform;
+        z-index: 1;
+    }
+}
+@media(max-width:480px){
     .nav-col:nth-child(1) .nav-items:nth-child(2) p{
         text-align: right;
     }
@@ -140,9 +198,30 @@ nav{
         display: none;
     }
     .header{
-        top: 30%;
+        top: 3%;
     }
     .hero-img{
         height: 50vh;
+    }
+
+    .header{
+        position: absolute;
+        width: 100%;
+        /*top: 0%;*/
+        left:0;
+        clip-path: polygon(0 100%,100% 100%,100% 0,0 0);
+        z-index: 1;
+    }
+
+    .hero{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0.7);
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100% );
+        will-change: transform;
+        z-index: 1;
     }
 }

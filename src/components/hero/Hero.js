@@ -2,7 +2,8 @@ import React, {useEffect, useRef} from 'react';
 import { gsap } from 'gsap';
 import { CustomEase } from 'gsap/CustomEase';
 import './Hero.css'
-import heroImg from '../../assets/heroImage.png'
+import heroImg from '../../assets/heroImage.jpg'
+import heroVideo from '../../assets/heroVideo.mp4'
 gsap.registerPlugin(CustomEase)
 CustomEase.create(
     "hop",
@@ -106,13 +107,25 @@ function Hero() {
                     });
 
 
-                    gsap.to(".hero-img img",{
+                    // gsap.to(".hero-img img",{
+                    //     y: 0,
+                    //     transform: "scale(0.95)",
+                    //     duration: 2.25,
+                    //     ease: "power3.inOut",
+                    //     delay: 0.25,
+                    // });
+
+
+                    gsap.to(".hero-img video",{
                         y: 0,
-                        transform: "scale(1)",
+                        transform: "scale(0.95)",
                         duration: 2.25,
                         ease: "power3.inOut",
                         delay: 0.25,
                     });
+
+
+
 
 
                     gsap.to(".header h1 span" ,{
@@ -144,7 +157,7 @@ function Hero() {
                 <nav>
                     <div className="nav-col">
                         <div className="nav-items">
-                            <a href="#">yash</a>
+                            <a href="www.google.com">yash</a>
                         </div>
                         <div className="nav-items">
                             <p>Digital Studio</p>
@@ -175,8 +188,12 @@ function Hero() {
                 </div>
 
                 <div className="hero-img">
-                    <img ref={heroImgRef}
-                        src={heroImg}/>
+                    {/*<img ref={heroImgRef}*/}
+                    {/*     src={heroImg}/>*/}
+                    <video width="600" autoPlay loop muted>
+                        <source src={heroVideo} type="video/mp4"/>
+                        Video is not supported in your browser.
+                    </video>
                 </div>
 
             </section>
