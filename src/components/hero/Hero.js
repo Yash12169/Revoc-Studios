@@ -97,16 +97,12 @@ function Hero() {
                         ease: "power3.inOut",
                         delay: 0.25,
                     });
-
-
                     gsap.to(".overlay", {
                         clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
                         duration: 2,
                         delay: 0.5,
                         ease: "hop",
                     });
-
-
                     // gsap.to(".hero-img img",{
                     //     y: 0,
                     //     transform: "scale(0.95)",
@@ -114,8 +110,6 @@ function Hero() {
                     //     ease: "power3.inOut",
                     //     delay: 0.25,
                     // });
-
-
                     gsap.to(".hero-img video",{
                         y: 0,
                         transform: "scale(0.95)",
@@ -123,11 +117,6 @@ function Hero() {
                         ease: "power3.inOut",
                         delay: 0.25,
                     });
-
-
-
-
-
                     gsap.to(".header h1 span" ,{
                         y: 0,
                         stagger: 0.2,
@@ -135,19 +124,10 @@ function Hero() {
                         ease: "power4.inOut",
                         delay: 0.75,
                     });
-
-
                 },
-
-
             });
         }
-
-
-
     }, []);
-
-
     return (
         <div className="container">
             <div className="counter"><p ref={counterRef}>0</p></div>
@@ -157,7 +137,7 @@ function Hero() {
                 <nav>
                     <div className="nav-col">
                         <div className="nav-items">
-                            <a href="www.google.com">yash</a>
+                            <a href="www.google.com">revoc</a>
                         </div>
                         <div className="nav-items">
                             <p>Digital Studio</p>
@@ -175,7 +155,7 @@ function Hero() {
                             <a href="#">Instagram</a>
                         </div>
                         <div className="nav-items">
-                            <p>Indore, India</p>
+                            <p>Banglore, KA</p>
                         </div>
                     </div>
 
@@ -188,8 +168,6 @@ function Hero() {
                 </div>
 
                 <div className="hero-img">
-                    {/*<img ref={heroImgRef}*/}
-                    {/*     src={heroImg}/>*/}
                     <video width="600" autoPlay loop muted>
                         <source src={heroVideo} type="video/mp4"/>
                         Video is not supported in your browser.

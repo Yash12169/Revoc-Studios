@@ -6,7 +6,7 @@
 
 
 
-img,video{
+video{
     width: 100%;
     height: 100%;
 
@@ -136,7 +136,7 @@ nav{
 
 }
 
-.hero-img img,.hero-img video{
+.hero-img video{
     transform: scale(2);
 
 }

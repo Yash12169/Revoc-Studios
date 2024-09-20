@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Blanquotey';
+    src: url('../../fonts/Blanquotey.ttf') format('truetype');
+}
+.footer-parent{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer-spacer{
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+    border-radius: 250px 250px 0px 0px;
+
+}
+.links-out{
+    display: flex;
+    gap: 1rem;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-between;
+    min-height: 70vh;
+    gap: 5rem;
+    
+}
+.footer-heading p{
+    display: flex;
+    /*background-color: greenyellow;*/
+    font-size: 7rem;
+    font-family: -apple-system;
+    color: #F5F5F5;
+}
+.footer-matter{
+    display: flex;
+    /*background-color: magenta;*/
+    justify-content: space-between;
+}
+.footer-content{
+    display: flex;
+    /*background-color: firebrick;*/
+    gap: 6rem;
+    /*margin-right: 19rem;*/
+}
+.footer-logo{
+    display: flex;
+    height: fit-content;
+    /* clip-path: polygon(0 0,100% 0,100% 100%,0 100%); */
+    /* background-color:green; */
+    
+
+}
+.footer-logo p{
+    color: #F5F5F5;
+    font-family: Blanquotey;
+    font-size: 8rem;
+    /*background-color: greenyellow;*/
+    line-height: 120px;
+    
+    /* transform: translateY(120px); */
+
+}
+.footer-links-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-links p, .footer-links-container p{
+    font-family: -apple-system;
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+}
+.footer-partition{
+    background-color: white;
+    width: 2px;
+    border-radius: 20%;
+    height: 0px;
+}
+.footer-heading-des p{
+    color: white;
+    width: 60%;
+    font-size: 20px;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+@media(min-width:1150px) and (max-width:1300px){
+    footer{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        padding-bottom: 5rem;
+        justify-content: space-between;
+        min-height: 70vh;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+    .footer-links p, .footer-links-container p{
+        font-family: -apple-system;
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+    }
+    .footer-logo p{
+        color: #F5F5F5;
+        font-family: Blanquotey;
+        font-size: 6rem;
+        /*background-color: greenyellow;*/
+        line-height: 120px;
+        
+        /* transform: translateY(120px); */
+    
+    }
+
+
+    .footer-heading{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* background-color: gainsboro; */
+    }
+    .footer-heading p{
+        display: flex;
+        /*background-color: greenyellow;*/
+        font-size: 6rem;
+        font-family: -apple-system;
+        color: #F5F5F5;
+        line-height: 5.5rem;
+    }
+    .footer-heading-des p{
+        color: white;
+        width: 65%;
+        font-size: 20px;
+        line-height: 1.8rem;
+    }
+}
+
+
+
+
+@media(max-width:1150px){
+    footer{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        padding-bottom: 5rem;
+        justify-content: space-between;
+        min-height: 70vh;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+    .footer-links p, .footer-links-container p{
+        font-family: -apple-system;
+        font-size: 1px;
+        color: white;
+        font-weight: 500;
+    }
+    .footer-logo p{
+        color: #F5F5F5;
+        font-family: Blanquotey;
+        font-size: 6rem;
+        /*background-color: greenyellow;*/
+        line-height: 120px;
+        
+        /* transform: translateY(120px); */
+    
+    }
+
+
+    .footer-heading{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* background-color: gainsboro; */
+        flex-wrap: wrap;
+        /* flex-direction: ; */
+    }
+    .footer-heading p{
+        display: flex;
+        /*background-color: greenyellow;*/
+        font-size: 6rem;
+        font-family: -apple-system;
+        color: #F5F5F5;
+        line-height: 5.5rem;
+    }
+    .footer-heading-des p{
+        color: white;
+        width: 65%;
+        font-size: 20px;
+        line-height: 1.8rem;
+    }
+}
