@@ -14,33 +14,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 export default function Footer() {
-
-
-
-    // useEffect(() => {
-    //     gsap.fromTo(".footer-logo p", 
-    //         { y: 100, opacity: 0 }, // Initial state (below and hidden)
-    //         {
-    //             y: 0, // End state (back to original position)
-    //             opacity: 1,
-    //             duration: 0.5, 
-    //             stagger: 0.1, // Stagger effect between letters
-    //             ease: "power4.inOut",
-    //             scrollTrigger: {
-    //                 trigger: "footer",
-    //                 start: "top 75%", // Adjust when animation should trigger
-    //                 toggleActions: "play reverse play reverse", // Trigger and reverse behavior
-    //                 markers: true,
-    //             }
-    //         });
-    // }, []);
-
-
-
     useEffect(()=>{
-
-
-
         gsap.utils.toArray(".footer-partition").forEach(partition=>{
             gsap.to(partition, 
                 {
@@ -57,12 +31,8 @@ export default function Footer() {
                     }
                 },
             )
-    
         })
     },[])
-
-
-
     return (
         <div className={'footer-parent'}>
             <div className={'footer-spacer'}></div>
