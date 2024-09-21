@@ -3,6 +3,10 @@ import './footer.css'
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { RevealLinks } from '../animations/RevealLinks';
+import insta from '../../assets/instagram-2016-5.svg'
+import twitter from '../../assets/x-2.svg'
+import behance from '../../assets/behance.svg'
+import dribbble from '../../assets/dribbble-icon.svg'
 gsap.registerPlugin(ScrollTrigger)
 
 
@@ -55,41 +59,21 @@ export default function Footer() {
             )
     
         })
-        
-        
-        // gsap.to(".footer-logo p",{
-        //     y: 0,
-        //     opacity: 1,
-        //     stagger: 0.1,
-        //     duration: 0.5,
-        //     ease:"power4.inOut",
-        //     scrollTrigger: {
-        //         trigger: ".links-out",
-        //         start: "top 75%",
-        //         toggleActions: "play none play none",
-        //         // markers: true,
-        //     }
-        // })
-
-
     },[])
 
 
 
     return (
         <div className={'footer-parent'}>
-            <div className={'footer-spacer'}>
-
-            </div>
+            <div className={'footer-spacer'}></div>
             <footer>
-
                 <div className={'footer-heading'}>
                     <p>Lets discuss your project!</p>
                     <div className='footer-heading-des'>
                         <p>
                             Revoc Studios is a web design and development studio that brings creativity and technology together to craft stunning digital experiences. Based in Banglore, KA.
                         </p>
-                </div>
+                    </div>
                 </div>
                 
                 <div className={'footer-matter'}>
@@ -99,7 +83,7 @@ export default function Footer() {
                         <p>v</p>
                         <p>o</p>
                         <p>c</p>
-                        <p>&nbsp;</p> {/* Space between 'revoc' and 'studios' */}
+                        <p>&nbsp;</p> 
                         <p>s</p>
                         <p>t</p>
                         <p>u</p>
@@ -122,13 +106,20 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
+                        <div className='partition-mob'></div>
                         <div className={'links-out'}>
                             <div className={'footer-partition'}></div>
-                            <div className={'footer-links-container'}>
+                            <div className={'footer-links-container mob-2'}>
                                 <RevealLinks text={'Instagram'}/>
                                 <RevealLinks text={'Twitter'}/>
-                                <RevealLinks text={'Clutch'}/>
+                                <RevealLinks text={'Behance'}/>
                                 <RevealLinks text={'Dribbble'}/>    
+                            </div>
+                            <div className={'footer-links-container-mob'}>
+                                                             <img src={insta}/>
+                                <img src={dribbble}/>
+                                <img src={behance}/>
+                                <img src={twitter}/>
                             </div>
                         </div>
                     </div>

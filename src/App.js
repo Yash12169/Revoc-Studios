@@ -9,13 +9,13 @@ function App() {
   return (
       <ReactLenis root>
           <div className="App">
-              {/*<Hero/>*/}
-              {/*<About/>*/}
+              <Hero/>
+              <About/>
               {/* <RevealLinks/> */}
-              <div className='spacer'></div>
+              {/* <div className='spacer'></div> */}
 
               
-                <Footer/>
+              <Footer/>
 
           </div>
       </ReactLenis>
