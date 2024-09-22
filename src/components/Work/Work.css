@@ -1,0 +1,10 @@
+.main-work {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery-work{
+    width: 70%;
+  }
