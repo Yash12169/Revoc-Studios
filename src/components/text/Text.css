@@ -4,7 +4,7 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #ebebeb;
     position: relative;
   }
   .container-txt .grid-txt{
@@ -30,7 +30,7 @@
 
   .body-txt p{
     color:white;
-    font-size: 6vw;
+    font-size: 5.5vw;
 
   }
   .grid-txt .column-txt{
@@ -42,3 +42,8 @@
     height: 5vw;
   }
   
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

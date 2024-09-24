@@ -26,8 +26,8 @@ export default function Text() {
   
   return (
     <div className={'container-txt '}>
-      <div className={'body-txt'}>
-        <p>We specialize in turning space into complexe shapes</p>
+      <div className={'body-txt chakra-petch-reg'}>
+        <p>We craft solutions that transform ideas into visually striking realities.</p>
       </div>
       <div className={'grid-txt'}>
         {

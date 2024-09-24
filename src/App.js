@@ -9,21 +9,21 @@ import ExpandingCard, { VanishList } from './components/slider/Slider';
 import Text from './components/text/Text';
 import Work from './components/Work/Work';
 import Bezier from './components/bezier/Bezier';
+import Carousel from './components/carousel/Carousel';
 function App() {
   return (
       <ReactLenis root>
          
           <div className="App">
-               {/* <Hero/> */}
+              {/* <Hero/>  */}
+              {/* <Work/> */}
+              <Text/>
+              <Bezier/>
+             <Carousel/>
+            <Bezier/>
+             
               {/* <About/> */}
-              {/* <Text/> */}
-              {/* <div className='w-screen h-screen relative'>
-               
-              </div> */}
-              {/* <Footer/>   */}
-
-              <Work/>
-                <Bezier/>
+              {/* <Footer/>    */}
           </div>
       </ReactLenis>
   );

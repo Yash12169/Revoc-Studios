@@ -1,0 +1,213 @@
+
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.heading-carousel{
+    font-size: 2rem;
+}
+
+.chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.chakra-petch-reg {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.carousel-image-container{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    
+
+}
+.carousel-image img{
+    height: 600px;
+    width: 600px;
+}
+.cr-img-title{
+    font-size: 1.3rem;
+}
+.carousel-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cr-img-des{
+    font-size: 1rem;
+}
+.carousel-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.l-btn-rew {
+    z-index: 5;
+    border:1px solid white;
+    display: flex;
+    background-color: white;
+    width: 150px;
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: #3f2021;
+    box-shadow: 0px 0px 0px 1px;
+}
+
+.l-btn-rew span {
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.l-btn-rew .icon-container-rew {
+    background-color: black;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.l-btn-rew::before,
+.l-btn-rew::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 1;
+    
+    
+}
+
+.l-btn-rew::before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+}
+
+.l-btn-rew::after {
+    right: -20px;
+    transform: translate(50%, -50%);
+}
+
+.l-btn-rew:hover {
+    color: white;
+}
+
+.l-btn-rew:hover .icon-container-rew {
+    background-color: white;
+}
+
+.l-btn-rew:hover .carousel-sv {
+    color: black;
+}
+
+.l-btn-rew:hover::before {
+    animation: criss-cross-left 0.8s both;
+    animation-direction: alternate;
+}
+
+.l-btn-rew:hover::after {
+    animation: criss-cross-right 0.8s both;
+    animation-direction: alternate;
+}
+@keyframes criss-cross-left {
+    0% {
+        left: -20px;
+    }
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 50%;
+        width: 375px;
+        height: 46px;
+    }
+}
+
+@keyframes criss-cross-right {
+    0% {
+        right: -20px;
+    }
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        right: 50%;
+        width: 375px;
+        height: 44px;
+    }
+}
+
