@@ -1,6 +1,17 @@
 .width-diff{
     font-family: -apple-system;
     font-size: 28px;
-    color: white;
+    color: black;
     font-weight: 500;
+}
+.chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.chakra-petch-reg {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }

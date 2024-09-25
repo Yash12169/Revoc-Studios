@@ -11,6 +11,8 @@ import img3 from '../../assets/img3.jpg'
 import img4 from '../../assets/img6.jpg'
 import img5 from '../../assets/img5.jpg'
 import img6 from '../../assets/img4.jpg'
+import Services from "../services/Services";
+import Bezier from "../bezier/Bezier";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -43,7 +45,7 @@ export default function About() {
                     start: "top center",
                     end: "150% bottom",
                     scrub: true,
-                    markers: true,
+                    
                     onUpdate: (self) => {
                         const progress = self.progress;
                         cardLeft.style.transform = `translateX(${progress * leftXValues[index]}px) translateY(${progress * yValues[index]}px) rotate(${progress * leftRotationValues[index]}deg)`;
@@ -117,9 +119,11 @@ export default function About() {
         <ReactLenis root>
             <section className={"hero-abt sec-about"}>
                 <div className={'img-container-abt'}>
-                    <img className={'img-about'} src={logo1} alt={'logo1'}/>
+                    {/* <img className={'img-about'} src={logo1} alt={'logo1'}/> */}
+                    <Services/>
                 </div>
             </section>
+            
             <section className={'main-abt sec-about'}>
                 <div className={'main-content'}>
                     <div className={'logo-abt'}>
@@ -134,18 +138,15 @@ export default function About() {
                     </div>
                     <div className={'copy-abt'}>
                         <div className={'line-abt'}>
-                            <p>We Transform ideas into powerful digital solutions</p>
+                            <p className="chakra-petch-reg">We Transform ideas into powerful digital solutions</p>
                         </div>
                         <div className={'line-abt'}>
-                            <p>and craft bespoke experiences that </p>
+                            <p className="chakra-petch-reg">and craft bespoke experiences that </p>
                         </div>
                         <div className={'line-abt'}>
-                            <p>elevate brands and engage audiences.</p>
+                            <p className="chakra-petch-reg">elevate brands and engage audiences.</p>
                         </div>
                     </div>
-                    {/*<div className={'btn'}>*/}
-                    {/*    <button>E-commerce solutions</button>*/}
-                    {/*</div>*/}
                 </div>
 
                 {generateRows()}

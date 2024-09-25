@@ -15,30 +15,32 @@
     width: 100%;
     height: 4rem;
     border-radius: 250px 250px 0px 0px;
-
+    display: none;
 }
 .links-out{
     display: flex;
     gap: 1rem;
 }
 footer{
-    background-color: black;
+    /* background-color: black; */
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     padding-right: 5rem;
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-bottom: 5rem;
     justify-content: space-between;
     min-height: 70vh;
-    gap: 5rem;
+    gap: 3rem;
     
 }
 .footer-heading p{
     display: flex;
     /*background-color: greenyellow;*/
     font-size: 7rem;
-    font-family: -apple-system;
-    color: #F5F5F5;
+    /* font-family: -apple-system; */
+    /* color: #F5F5F5; */
+    color: black;
 }
 .footer-matter{
     display: flex;
@@ -60,7 +62,8 @@ footer{
 
 }
 .footer-logo p{
-    color: #F5F5F5;
+    /* color: #F5F5F5; */
+    color: black;
     font-family: Blanquotey;
     font-size: 8rem;
     /*background-color: greenyellow;*/
@@ -77,17 +80,20 @@ footer{
 .footer-links p, .footer-links-container p{
     font-family: -apple-system;
     font-size: 28px;
-    color: white;
+    /* color: white; */
+    color: black;
     font-weight: 500;
 }
 .footer-partition{
-    background-color: white;
+    /* background-color: white; */
+    background-color: black;
     width: 2px;
     border-radius: 20%;
     height: 0px;
 }
 .footer-heading-des p{
-    color: white;
+    /* color: white; */
+    color: black;
     width: 60%;
     font-size: 20px;
 }
@@ -99,10 +105,20 @@ footer{
 .footer-links-container-mob{
     display: none;
 }
+.chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
+.chakra-petch-reg {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 @media(min-width:1151px) and (max-width:1300px){
     footer{
-        background-color: black;
+        /* background-color: black; */
         display: flex;
         flex-direction: column;
         padding-right: 5rem;

@@ -1,16 +1,84 @@
 
-.carousel-container{
+.carousel-container-services{
     display: flex;
     flex-direction: column;
     padding: 2rem;
     gap: 3rem;
 }
 
-.heading-carousel{
+.heading-carousel-services{
     font-size: 2rem;
-    margin-top: 0rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+
+.carousel-image-container-services{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    gap: 1rem;
+    
+
+}
+.services-gif-asset, .service-gif-asset {
+    mix-blend-mode: multiply;
+    height: 234px;
+    width: 332px;
+   
+}
+.carousel-image-services{
+    /* background-color: #3f2021; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.carousel-item-services{
+    /* padding: 8rem; */
+    width: 33%;
+    background-color: rgba(214, 214, 214, 0.882);
+    /* margin:1rem; */
+}
+.carousel-content-services{
+    /* padding-left: 2rem; */
+    /* padding-right: 2rem; */
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+.cr-img-title-services{
+    font-size: 1.3rem;
+}
+.carousel-item-services{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: green; */
+}
+.cr-img-des-services{
+    font-size: 1rem;
+}
+.carousel-footer-services{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .chakra-petch-bold {
     font-family: "Chakra Petch", sans-serif;
@@ -23,49 +91,6 @@
     font-weight: 500;
     font-style: normal;
 }
-.carousel-image-container{
-    display: flex;
-    justify-content: space-between;
-    /* background-color: green; */
-    
-
-}
-.carousel-image img{
-    height: 600px;
-    width: 600px;
-}
-.cr-img-title{
-    font-size: 1.3rem;
-}
-.carousel-item{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.cr-img-des{
-    font-size: 1rem;
-}
-.carousel-footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

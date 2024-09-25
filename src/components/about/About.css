@@ -15,6 +15,23 @@
 /*}*/
 
 
+
+
+.chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.chakra-petch-reg {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
 .img-about{
     width: 100%;
     height: 100%;
@@ -35,11 +52,6 @@
     height: 100vh;
 }
 
-.hero-abt .img-container-abt{
-
-    width: 50%;
-    aspect-ratio: 1;
-}
 
 .main-abt{
     width: 100vw;

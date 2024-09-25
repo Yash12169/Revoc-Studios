@@ -38,9 +38,9 @@ export default function Footer() {
             <div className={'footer-spacer'}></div>
             <footer>
                 <div className={'footer-heading'}>
-                    <p>Lets discuss your project!</p>
+                    <p className='chakra-petch-reg'>Lets discuss your project!</p>
                     <div className='footer-heading-des'>
-                        <p>
+                        <p className='chakra-petch-reg'>
                             Revoc Studios is a web design and development studio that brings creativity and technology together to craft stunning digital experiences. Based in Banglore, KA.
                         </p>
                     </div>
@@ -70,23 +70,24 @@ export default function Footer() {
                                     <RevealLinks text={"Work"}/>
                                     <RevealLinks text={"Contact"}/>
                                     <RevealLinks text={"Studio"}/>
+                                    <RevealLinks text={"About"}/>
                                 </div>
-                                <div className={'copyright'}>
-                                    <p>©Revoc 2024</p>
-                                </div>
+                                {/* <div className={'copyright'}>
+                                    <p className={'chakra-petch-reg'}>©Revoc 2024</p>
+                                </div> */}
                             </div>
                         </div>
                         <div className='partition-mob'></div>
                         <div className={'links-out'}>
                             <div className={'footer-partition'}></div>
-                            <div className={'footer-links-container mob-2'}>
+                            <div className={'footer-links-container mob-2 chakra-petch-reg'}>
                                 <RevealLinks text={'Instagram'}/>
                                 <RevealLinks text={'Twitter'}/>
                                 <RevealLinks text={'Behance'}/>
                                 <RevealLinks text={'Dribbble'}/>    
                             </div>
                             <div className={'footer-links-container-mob'}>
-                                                             <img src={insta}/>
+                                <img src={insta}/>
                                 <img src={dribbble}/>
                                 <img src={behance}/>
                                 <img src={twitter}/>

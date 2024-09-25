@@ -10,20 +10,20 @@ import Text from './components/text/Text';
 import Work from './components/Work/Work';
 import Bezier from './components/bezier/Bezier';
 import Carousel from './components/carousel/Carousel';
+import Services from './components/services/Services';
 function App() {
   return (
       <ReactLenis root>
          
           <div className="App">
-              {/* <Hero/>  */}
-              {/* <Work/> */}
+              <Hero/> 
               <Text/>
               <Bezier/>
-             <Carousel/>
-            <Bezier/>
-             
-              {/* <About/> */}
-              {/* <Footer/>    */}
+              <Carousel/>
+              <Bezier/>
+              <About/>
+              <Bezier/>
+              <Footer/>                 
           </div>
       </ReactLenis>
   );
