@@ -1,8 +1,8 @@
 import React from 'react'
 import './Carousel.css'
-import img1 from '../../assets/img1.jpg'
-import img2 from '../../assets/img2.jpg'
-import img3 from '../../assets/img3.jpg'
+import img1 from '../../assets/services1.png'
+import img2 from '../../assets/services3.png'
+import img3 from '../../assets/services2.png'
 export default function Carousel() {
 
 
@@ -12,19 +12,19 @@ const carouselData = [
             id:1,
             img: img1,
             title: "MadSense",
-            description: "Identity and product design for this AI-powered marketing and advertising tool."
+            description: "Harnessing the power of AI to transform data into explosive digital marketing strategies, creating immersive advertising experiences."
         },
         {
             id:2,
             img: img2,
             title: "Pooortal",
-            description: "Rebranding and redesigning a file-sharing app."
+            description: "Step into the future of rebranding with modern aesthetics and design. Poortal’s platform merges high-tech visuals with unparalleled functionality for the digital age."
         },
         {
             id:3,
             img: img3,
-            title: "Bassivity Group",
-            description: "Brand identity and product design services for the Bassivity Group."
+            title: "Primal Edge",
+            description: "Delivering bold brand identities with a fierce, cutting-edge aesthetic that unleashes your inner beast."
         },
 
 ]

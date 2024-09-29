@@ -133,8 +133,7 @@ export default function About() {
                                     frameBorder="0" className="giphy-embed" title={'Giphy'}
                                     allowFullScreen></iframe>
                         </div>
-                        <p><a href="https://giphy.com/gifs/89a-art-black-and-white-artists-on-tumblr-c3OZsDoaz7kD6">via
-                            GIPHY</a></p>
+                       
                     </div>
                     <div className={'copy-abt'}>
                         <div className={'line-abt'}>

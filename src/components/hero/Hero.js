@@ -1,9 +1,11 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { gsap } from 'gsap';
 import { CustomEase } from 'gsap/CustomEase';
 import './Hero.css'
 import heroImg from '../../assets/heroImage.jpg'
 import heroVideo from '../../assets/heroVideo.mp4'
+import { useAtom } from 'jotai';
+import { imgAtom, vidAtom } from '../../atoms/atoms';
 gsap.registerPlugin(CustomEase)
 CustomEase.create(
     "hop",
@@ -17,6 +19,11 @@ function Hero() {
     const heroRef = useRef(null);
     const overlayRef = useRef(null);
     const heroImgRef = useRef(null);
+
+
+
+
+
     useEffect(() => {
         const splitTextIntoSpans =(selector)=>{
             let elements = document.querySelectorAll(selector);
@@ -29,14 +36,13 @@ function Hero() {
 
                 element.innerHTML = splitText;
             });
-
-
-
         }
         splitTextIntoSpans(".header h1");
+
+
+
         function animateCounter(){
             const counterElement = document.querySelector(".counter p");
-            console.log(counterElement)
             let currentValue = 0;
             const updateInterval = 300;
             const maxDuration = 2000;
@@ -45,6 +51,11 @@ function Hero() {
 
             function updateCounter(){
                 const elapsedTime = Date.now() - startTime;
+
+
+                
+
+
                 if(elapsedTime < maxDuration){
                     currentValue = Math.min(currentValue+Math.floor(Math.random()*30)+5,endValue);
                     counterElement.textContent = currentValue;
