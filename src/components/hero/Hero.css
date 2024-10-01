@@ -12,6 +12,7 @@ video{
 
     object-fit: cover;
     border-radius: 20px;
+    z-index: 2;
 }
 
 p,a{
@@ -23,7 +24,7 @@ p,a{
 
 .container{
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     overflow: hidden;
 }
 .counter{
@@ -32,6 +33,7 @@ p,a{
     left:50%;
     transform: translate(-50%,-50%);
     width: 40px;
+    height: 20px;
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     z-index: 0;
@@ -47,11 +49,11 @@ p,a{
 
 .hero{
     position: absolute;
-    top: 74%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0.7);
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100% );
     will-change: transform;
     z-index: 1;
@@ -61,11 +63,11 @@ p,a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #1a1a1a;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-    z-index: 2;
+    z-index: 3;
 }
 
 nav{
@@ -98,7 +100,7 @@ nav{
 .header{
     position: absolute;
     width: 100%;
-    top: -12%;
+    top: -5%;
     left:0;
     clip-path: polygon(0 100%,100% 100%,100% 0,0 0);
     z-index: 1;
@@ -107,31 +109,29 @@ nav{
 .header h1{
     font-family: "Blanquotey";
     font-size:42vw;
-    /*font-size: 25vw;*/
+    /* font-size: 38.5vw; */
     font-weight: lighter;
     text-align: center;
     margin: 0;
     padding: 0;
-    /*line-height: 100%;*/
+    line-height: 100%;
+    z-index: 1;
 }
 
 .header h1 span{
     position: relative;
     display: inline-block;
     transform: translateY(500px);
+    z-index: 1;
 }
 
 .hero-img{
     position: absolute;
-    top: 560px;
+    bottom: 0;
     width: 100%;
-    height: 70vh;
-    /*overflow: hidden;*/
-    display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    z-index: 1;
-    /*background-color: greenyellow;*/
+    height: 35vh;
+    overflow: hidden;
+    z-index: 2;
 
 
 }
@@ -140,88 +140,19 @@ nav{
     transform: scale(2);
 
 }
-@media (max-width: 480px) {
-
-
-}
-@media (min-width:481px)  and (max-width:900px){
-    .nav-col:nth-child(1) .nav-items:nth-child(2) p{
+@media (max-width:900px) {
+    .nav-col:nth-child(1) , .nav-items:nth-child(2) p {
         text-align: right;
     }
-    .nav-col.nav-col:nth-child(2){
+    .nav-col:nth-child(2){
         display: none;
     }
-
+    .header{
+        top: 10%;
+    }  
     .hero-img{
-        height: 50vh;
-    }
-    .hero-img{
-        position: absolute;
-        top: 200px;
-        width: 100%;
         height: 70vh;
-        /*overflow: hidden;*/
-        display: flex;
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        z-index: 0;
-        /*background-color: greenyellow;*/
-
-
-    }
-    .header{
-        position: absolute;
-        width: 100%;
-        top: -0%;
-        left:0;
-        clip-path: polygon(0 100%,100% 100%,100% 0,0 0);
-        z-index: 1;
     }
 
-    .hero{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0.7);
-        width: 100vw;
-        height: 100vh;
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100% );
-        will-change: transform;
-        z-index: 1;
-    }
-}
-@media(max-width:480px){
-    .nav-col:nth-child(1) .nav-items:nth-child(2) p{
-        text-align: right;
-    }
-    .nav-col.nav-col:nth-child(2){
-        display: none;
-    }
-    .header{
-        top: 3%;
-    }
-    .hero-img{
-        height: 50vh;
-    }
 
-    .header{
-        position: absolute;
-        width: 100%;
-        /*top: 0%;*/
-        left:0;
-        clip-path: polygon(0 100%,100% 100%,100% 0,0 0);
-        z-index: 1;
-    }
-
-    .hero{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0.7);
-        width: 100vw;
-        height: 100vh;
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100% );
-        will-change: transform;
-        z-index: 1;
-    }
 }

@@ -1,11 +1,9 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import { gsap } from 'gsap';
 import { CustomEase } from 'gsap/CustomEase';
 import './Hero.css'
-import heroImg from '../../assets/heroImage.jpg'
 import heroVideo from '../../assets/heroVideo.mp4'
-import { useAtom } from 'jotai';
-import { imgAtom, vidAtom } from '../../atoms/atoms';
+
 gsap.registerPlugin(CustomEase)
 CustomEase.create(
     "hop",
@@ -18,10 +16,6 @@ function Hero() {
     const counterRef = useRef(null);
     const heroRef = useRef(null);
     const overlayRef = useRef(null);
-    const heroImgRef = useRef(null);
-
-
-
 
 
     useEffect(() => {
