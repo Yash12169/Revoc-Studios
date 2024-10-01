@@ -1,9 +1,7 @@
- import  {useEffect}  from "react";
+import  {useEffect} from "react";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger"
-import {ReactLenis} from "lenis/react";
 import './About.css';
-import logo1 from '../../assets/logo1.jpg'
 
 import img1 from '../../assets/img1.jpg'
 import img2 from '../../assets/img2.jpg'
@@ -12,7 +10,6 @@ import img4 from '../../assets/img6.jpg'
 import img5 from '../../assets/img5.jpg'
 import img6 from '../../assets/img4.jpg'
 import Services from "../services/Services";
-import Bezier from "../bezier/Bezier";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -115,16 +112,14 @@ export default function About() {
         return rows;
     }
   return (
-      <>
-        <ReactLenis root>
-            <section className={"hero-abt sec-about"}>
+      <div className="relative mart">
+            <section className={"hero-abt  sec-about"}>
                 <div className={'img-container-abt'}>
-                    {/* <img className={'img-about'} src={logo1} alt={'logo1'}/> */}
                     <Services/>
                 </div>
             </section>
             
-            <section className={'main-abt sec-about'}>
+            <section className={'main-abt mart2 sec-about'}>
                 <div className={'main-content'}>
                     <div className={'logo-abt'}>
                         {/*<img src={logo2}/>*/}
@@ -150,7 +145,6 @@ export default function About() {
 
                 {generateRows()}
             </section>
-        </ReactLenis>
-      </>
+      </div>
   );
 }

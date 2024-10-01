@@ -16,7 +16,20 @@
     font-style: normal;
 }
 
+.line-abt{
+    font-family: Ubuntu;
+    position: relative;
+    margin: 0.5em 0;
+    width: max-content;
+    height: 28px;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 
+}
+.line-abt p{
+    position: relative;
+    font-size: 24px;
+    transform: translateY(30px);
+}
 
 
 .img-about{
@@ -113,25 +126,49 @@
     justify-content: center;
     align-items: center;
 }
-.line-abt{
-    font-family: Ubuntu;
-    position: relative;
-    margin: 0.5em 0;
-    width: max-content;
-    height: 28px;
-    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
-
-}
-.line-abt p{
-    position: relative;
-    font-size: 24px;
-    transform: translateY(30px);
-}
 
 @media (max-width:900px){
     .card-abt{
+       
         width: 50%;
         height: 240px;
     }
 }
 
+@media (max-width:480px) {
+    .sec-about{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: peru; */
+    }
+
+
+    .hero-abt{
+        height: 100vh;
+        position: relative;
+        /* margin-bottom: 10rem; */
+    }
+    .line-abt{
+        font-family: Ubuntu;
+        position: relative;
+        margin: 0.1em 0;
+        width: max-content;
+        height: 28px;
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+
+    }
+    .line-abt p{
+        position: relative;
+        font-size: 16px;
+        transform: translateY(30px);
+    }
+    .mart{
+        margin-top: 55rem;
+    }
+    .mart2{
+        margin-top: 40rem;
+    }
+}
