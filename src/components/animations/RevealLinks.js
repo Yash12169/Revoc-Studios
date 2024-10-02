@@ -18,7 +18,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block text-black chakra-petch-reg overflow-hidden text-[28px] "
+      className="relative block text-black chakra-petch-reg overflow-hidden width-diff "
       style={{
         // lineHeight: 1,
       }}

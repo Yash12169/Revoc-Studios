@@ -78,7 +78,7 @@ footer{
     justify-content: space-between;
 }
 .footer-links p, .footer-links-container p{
-    font-family: -apple-system;
+    /* font-family: -apple-system; */
     font-size: 28px;
     /* color: white; */
     color: black;
@@ -116,7 +116,9 @@ footer{
     font-weight: 500;
     font-style: normal;
 }
-
+.footer-content-mob{
+    display: none;
+}
 
 @media (max-width:480px) {
     footer{
@@ -175,18 +177,34 @@ footer{
         align-items: center;
         flex-direction: column;
     }
+    .footer-links p, .footer-links-container p{
+        font-family: -apple-system;
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 500;
+    }
+    .mob-2{
+        display: flex;
+    }
+    .footer-links-container-mob{
+        display: flex;
+    }
     .footer-content{
+        display: none;
+
+        
+    }
+    .footer-content-mob{
         display: flex;
         /* background-color: firebrick; */
         width: 100%;
         gap: 0rem;
         justify-content: space-between;
     }
-    .footer-links p, .footer-links-container p{
-        font-family: -apple-system;
-        font-size: 1.5rem;
-        color: black;
-        font-weight: 500;
+    .footer-links-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 

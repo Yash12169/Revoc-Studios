@@ -72,25 +72,35 @@ export default function Footer() {
                                     <RevealLinks text={"Studio"}/>
                                     <RevealLinks text={"About"}/>
                                 </div>
-                                {/* <div className={'copyright'}>
-                                    <p className={'chakra-petch-reg'}>©Revoc 2024</p>
-                                </div> */}
                             </div>
                         </div>
-                        <div className='partition-mob'></div>
                         <div className={'links-out'}>
                             <div className={'footer-partition'}></div>
-                            <div className={'footer-links-container mob-2 chakra-petch-reg'}>
+                            <div className={'footer-links-container chakra-petch-reg'}>
                                 <RevealLinks text={'Instagram'}/>
                                 <RevealLinks text={'Twitter'}/>
                                 <RevealLinks text={'Behance'}/>
                                 <RevealLinks text={'Dribbble'}/>    
                             </div>
-                            <div className={'footer-links-container-mob'}>
-                                <img src={insta} alt='insta'/>
-                                <img src={dribbble} alt='dribbble'/>
-                                <img src={behance} alt='behance'/>
-                                <img src={twitter} alt='twitter'/>
+                        </div>
+                    </div>
+
+
+                    <div className={'footer-content-mob'}>
+                        <div className={'links-out'}>
+                            <div className={'footer-links-container chakra-petch-reg'}>
+                                    <p>Work</p>
+                                    <p>Contact</p>
+                                    <p>Studio</p>
+                                    <p>About</p>
+                            </div>
+                        </div>
+                        <div className={'links-out'}>
+                            <div className={'footer-links-container chakra-petch-reg'}>
+                                    <p>Instagram</p>
+                                    <p>Dribbble</p>
+                                    <p>Twitter</p>
+                                    <p>Behance</p>
                             </div>
                         </div>
                     </div>

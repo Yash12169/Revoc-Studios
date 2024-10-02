@@ -1,5 +1,4 @@
 .width-diff{
-    font-family: -apple-system;
     font-size: 28px;
     color: black;
     font-weight: 500;
@@ -18,7 +17,7 @@
 @media (max-width:480px) {
     .width-diff{
         font-family: -apple-system;
-        font-size: 12px;
+        font-size: 18px;
         color: black;
         font-weight: 500;
     }
