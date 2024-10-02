@@ -10,7 +10,6 @@ import Carousel from './components/carousel/Carousel';
 function App() {
   return (
       <ReactLenis root>
-         
           <div className="App">
               <Hero/> 
               <Text/>
@@ -18,7 +17,6 @@ function App() {
               <Carousel/>
               <Bezier/>
               <About/>
-              <Bezier/>
               <Footer/>                 
           </div>
       </ReactLenis>

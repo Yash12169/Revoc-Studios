@@ -7,6 +7,7 @@ import insta from '../../assets/instagram-2016-5.svg'
 import twitter from '../../assets/x-2.svg'
 import behance from '../../assets/behance.svg'
 import dribbble from '../../assets/dribbble-icon.svg'
+import Bezier from '../bezier/Bezier';
 gsap.registerPlugin(ScrollTrigger)
 
 
@@ -35,6 +36,7 @@ export default function Footer() {
     },[])
     return (
         <div className={'footer-parent'}>
+            <Bezier/>
             <div className={'footer-spacer'}></div>
             <footer>
                 <div className={'footer-heading'}>

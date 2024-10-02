@@ -1,10 +1,10 @@
-.slider-text{
-    font-size: 53px;
+.slider-text-mobile{
+    font-size: 22px;
     /*color:#F8F8FF;*/
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     text-align: center;
-    width: 1200px;
-    color: #F5F5F5;
-    mix-blend-mode: difference;
-    font-weight: 700;
+    width: 300px;
+    color: white;
+
+    font-weight: 600;
 }
