@@ -87,10 +87,10 @@ export default function Footer() {
                                 <RevealLinks text={'Dribbble'}/>    
                             </div>
                             <div className={'footer-links-container-mob'}>
-                                <img src={insta}/>
-                                <img src={dribbble}/>
-                                <img src={behance}/>
-                                <img src={twitter}/>
+                                <img src={insta} alt='insta'/>
+                                <img src={dribbble} alt='dribbble'/>
+                                <img src={behance} alt='behance'/>
+                                <img src={twitter} alt='twitter'/>
                             </div>
                         </div>
                     </div>
