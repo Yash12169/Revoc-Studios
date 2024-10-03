@@ -24,11 +24,11 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/revoc-studio-landing-page.git
+   git clone https://github.com/Yash12169/Revoc-Studios.git
 
 2. Navigate into the project directory:
    ```bash
-   cd revoc-studio-landing-page
+   cd Revoc-Studios
 
 3. Start the development server:
 
