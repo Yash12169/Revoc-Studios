@@ -12,6 +12,7 @@ This is a responsive landing page for **Revoc Studio**, a web development studio
 ## Tech Stack
 
 - **React**: Frontend framework used for building the UI components.
+- **GSAP**: Used for adding interactive animations to the page.
 - **JavaScript (ES6+)**: Core language used in the project.
 - **CSS3**: Used for styling with media queries for responsiveness.
 - **HTML5**: Markup language for structuring the landing page.
